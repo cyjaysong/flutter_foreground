@@ -106,7 +106,7 @@ class IsolateHolderService : Service() {
         val imageId = resources.getIdentifier(FlutterBackgroundPlugin.notificationIconName, FlutterBackgroundPlugin.notificationIconDefType, packageName)
         val notification = NotificationCompat.Builder(this, CHANNEL_ID)
             .setOngoing(true)
-            .setWhen(false)
+            .setShowWhen(false)
             .setContentTitle(FlutterBackgroundPlugin.notificationTitle)
             .setContentText(FlutterBackgroundPlugin.notificationText)
             .setSmallIcon(imageId)
